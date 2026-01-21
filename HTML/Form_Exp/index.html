@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h1>Job Application Form</h1>
+
+    <form>
+
+        <!-- SECTION 1: Applicant Information -->
+        <fieldset>
+            <legend>Applicant Personal Details</legend>
+
+            <label>Full Name:
+                <input type="text" name="fullName" required>
+            </label><br><br>
+
+            <label>Email Address:
+                <input type="email" name="email" placeholder="example@gmail.com" required>
+            </label><br><br>
+
+            <label>Phone Number:
+                <input type="tel" name="phone" required>
+            </label><br><br>
+
+            <label>LinkedIn Profile:
+                <input type="url" name="linkedin">
+            </label><br><br>
+
+            <label>Date of Birth:
+                <input type="date" name="dob" required>
+            </label><br><br>
+
+            <label>City:
+                <input type="text" name="city">
+            </label><br><br>
+
+            <label>Country:
+                <select name="country">
+                    <option value="pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </label><br><br>
+
+            <label>Upload Profile Photo:
+                <input type="file" name="photo" accept="image/*">
+            </label><br><br>
+
+            <p>Are you legally eligible to work?</p>
+            <label><input type="radio" name="legal" value="yes"> Yes</label>
+            <label><input type="radio" name="legal" value="no"> No</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- SECTION 2: Position & Experience -->
+        <fieldset>
+            <legend>Job Position & Experience Overview</legend>
+
+            <label>Select Job Role:
+                <select name="role" required>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="uiux">UI/UX Designer</option>
+                    <option value="data">Data Analyst</option>
+                    <option value="pm">Project Manager</option>
+                </select>
+            </label><br><br>
+
+            <label>Years of Experience:
+                <input type="number" name="experience" min="0" max="40">
+            </label><br><br>
+
+            <p>Employment Type Preferred:</p>
+            <label><input type="radio" name="jobType" value="full-time"> Full-Time</label>
+            <label><input type="radio" name="jobType" value="part-time"> Part-Time</label>
+            <label><input type="radio" name="jobType" value="remote"> Remote</label>
+            <br><br>
+
+            <label>Skills (Select Multiple):
+                <select name="skills" multiple size="6">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="react">React</option>
+                    <option value="py">Python</option>
+                    <option value="sql">SQL</option>
+                </select>
+            </label><br><br>
+
+            <label>Expected Salary:
+                <input type="text" name="salary">
+            </label><br><br>
+
+            <label>Upload Resume (PDF):
+                <input type="file" name="resume" accept=".pdf">
+            </label><br><br>
+
+            <label>Upload Portfolio:
+                <input type="file" name="portfolio" accept="image/*,.pdf">
+            </label>
+        </fieldset>
+
+        <br>
+
+        <!-- SECTION 3: Screening Questionnaire -->
+        <fieldset>
+            <legend>Applicant Screening Questions</legend>
+
+            <label>Most Challenging Project:
+                <textarea name="project" placeholder="Describe your project..."></textarea>
+            </label><br><br>
+
+            <label>Why do you want this job?
+                <textarea name="why"></textarea>
+            </label><br><br>
+
+            <p>Technologies you are comfortable with:</p>
+            <label><input type="checkbox" name="tech" value="git"> Git</label>
+            <label><input type="checkbox" name="tech" value="figma"> Figma</label>
+            <label><input type="checkbox" name="tech" value="firebase"> Firebase</label>
+            <label><input type="checkbox" name="tech" value="docker"> Docker</label>
+            <label><input type="checkbox" name="tech" value="aws"> AWS</label>
+            <br><br>
+
+            <label>Rate Your Skill (1–10):
+                <input type="range" name="rating" min="1" max="10">
+            </label><br><br>
+
+            <p>How soon can you join?</p>
+            <label><input type="radio" name="join" value="immediately" required> Immediately</label>
+            <label><input type="radio" name="join" value="2weeks"> 2 Weeks</label>
+            <label><input type="radio" name="join" value="1month"> 1 Month</label>
+            <label><input type="radio" name="join" value="more"> More than 1 Month</label>
+            <br><br>
+
+            <label>Preferred Badge Color:
+                <input type="color" name="badgeColor">
+            </label><br><br>
+
+            <input type="hidden" name="applicationVersion" value="3.0">
+
+        </fieldset>
+
+        <br>
+
+        <!-- SECTION 4: References & Declaration -->
+        <fieldset>
+            <legend>References & Declaration</legend>
+
+            <label>Reference Name:
+                <input type="text" name="refName">
+            </label><br><br>
+
+            <label>Reference Email:
+                <input type="email" name="refEmail">
+            </label><br><br>
+
+            <label>Reference Phone:
+                <input type="tel" name="refPhone">
+            </label><br><br>
+
+            <label>Relationship:
+                <input type="text" name="relation">
+            </label><br><br>
+
+            <label>Date of Submission:
+                <input type="date" name="submitDate">
+            </label><br><br>
+
+            <label>
+                <input type="checkbox" required>
+                I hereby declare that all information provided is accurate.
+            </label><br><br>
+
+            <label>
+                <input type="checkbox" required>
+                I accept company terms & conditions.
+            </label><br><br>
+
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+
+            <p>Your application will be reviewed within 5–7 working days.</p>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <div style="position: sticky; top: 0; background: lightblue; padding: 10px;">
+        I become sticky when you scroll!
+    </div> -->
+
+    <!-- Starting me normal (relative) jaisa behave karta hai.
+        Lekin scroll karte waqt ek point par sticky ho jata hai. -->
+
+
+
+    <h1>CSS Positions</h1>
+    <p>This is a demonstration of different CSS position properties.</p>
+
+    <!-- Static (default) -->
+    <!-- <div style="position: static; background-color: lightblue; padding: 10px; margin-bottom: 10px;">
+        Static Position (default)
+    </div> -->
+
+    <!-- Relative -->
+    <!-- top, left, right, bottom -->
+    <!-- <div style="position: relative; top: 10px; left: 10px; background-color: lightgreen; padding: 10px; margin-bottom: 10px;">
+        Relative Position (moved 10px down and right)
+    </div> -->
+
+    <!-- <div style="position: absolute; top: 50px; left: 50px; background-color: lightcoral; padding: 10px; margin-bottom: 10px;">
+        Absolute Position (50px from top and left of nearest positioned ancestor)
+    </div>
+
+    <div style="position: fixed; bottom: 10px; right: 10px; background-color: lightgoldenrodyellow; padding: 10px;">
+        Fixed Position (stays at bottom-right of viewport)
+    </div>
+
+    <div style="position: static; border: 2px solid blue;">
+        I am static (default)
+    </div> -->
+
+    <!-- Original jagah → still occupied -->
+    <!-- Shift → using top, left, right, bottom -->
+    <!-- <div style="position: relative; top: 20px; left: 30px; border: 2px solid green;">
+        I moved 20px down and 30px right, but my original space is not empty.
+    </div> -->
+
+    <br />
+
+    <!-- Element page ka flow chhor deta hai.
+    It positions itself relative to the nearest positioned parent.
+    "Positioned" means parent has:
+    ➡ position: relative | absolute | fixed | sticky
+    If no such parent → page (body) ke according position hoga. -->
+    <!-- <div style="position: relative; width: 200px; height: 200px; border: 2px solid black;">
+        Parent Box
+
+        <div style="position: absolute; top: 10px; right: 10px; background: yellow;">
+            I stick to parent corner
+        </div>
+    </div> -->
+    <!-- Think like: Absolute = “main apni marzi se kahin bhi bethun, parent diwar hai.” -->
+
+
+    <!-- Element screen par fixed hota hai.
+    Page scroll ho ya kuch bhi ho — element wahi ka wahi. -->
+    <!-- <div
+        style="position: fixed; bottom: 10px; right: 10px; background: red; color: white; padding: 12px; border-radius: 12px;">
+        Chat Button (Always visible)
+    </div> -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="whatsapp-btn">
+        WA
+    </div>
+
+    <div class="container">
+        <p class="chota-container">
+            10
+        </p>
+        <div class="design"></div>
+    </div>
+
+    <p class="testing-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo ullam veniam quaerat nisi. Doloremque recusandae, enim impedit cupiditate fugit sint eaque dolorem porro! Voluptas a ad quod aliquam commodi!dnkadkadkashdklashkdhaskdhaskhdkashdkahkashdkh Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione maiores quo totam magnam voluptatem temporibus necessitatibus accusantium obcaecati vitae est, quod molestias ipsum dicta omnis quaerat! Laborum sint culpa porro.</p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/* Universal Selector */
+* {
+    /* background-color: lightpink; */
+    margin: 0;
+    padding: 0;
+}
+
+/* Class Selector */
+.parent {
+    border: 1px solid black;
+    /* margin-top: 20px; */
+    padding: 50px;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+.child {
+    color: blue;
+    /* margin: 10px; */
+    border: 1px solid white;
+    line-height: 1.6em;
+    /* padding-top: 10px; */
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid black;
+    width: 280px;
+    padding: 15px;
+    background-color: antiquewhite;
+    margin: 22px;
+    border-radius: 5px;
+    height: auto;
+}
+
+.main-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(48, 56, 56);
+    margin-bottom: 8px;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px #5ebeba;
+}
+
+.content {
+    color: rgb(101, 113, 126);
+}
+
+.btn {
+    padding: 10px 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: tomato;
+}
+
+#nav-container {
+    border: 1px solid black;
+    padding: 17px 10px;
+    background-color: lightblue;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul>li {
+    border: 1px solid gray;
+    display: inline;
+    margin: 0px 8px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: darkred;
+}
+
+a:hover {
+    background-color: rgba(130, 210, 80, 0.8);
+    color: blue;
+}
+
+a:visited {
+    color: orangered;
+}
+
+a:active {
+    color: black;
+}
+
+a:focus {
+    text-decoration: underline;
+}
+
+div a {
+    color: darkgreen;
+    font-size: 20px;
+}
+
+h1+p {
+    color: purple;
+}
+
+/* .box {
+    background-color: yellow;
+    opacity: 0.5;
+} */
+
+.box {
+    /* background-color: rgba(236, 223, 36, 0.836); */
+    background-color: #fff176;
+}

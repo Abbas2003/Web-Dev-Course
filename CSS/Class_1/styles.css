@@ -1,0 +1,14 @@
+div {
+    border: 1px solid red;
+    background-color: lightgray;
+}
+h2 {
+    border: 1px solid white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: indigo;
+    background-color: linen;
+}
+main {
+    border: 1px solid blue;
+    color: grey;
+}

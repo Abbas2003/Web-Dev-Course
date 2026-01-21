@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form controls</title>
+</head>
+
+<body>
+
+    <!-- Formating short key: shift+Alt+f -->
+    <!-- All the value tags elements should be in small caps -->
+    <!-- Id is unique -->
+    <!-- Class is variable -->
+
+
+    <!-- form controls: user inputs -->
+    <h1 class="heading animation hidden">Form controls</h1>
+    <form action="#">
+        <!-- Textarea -->
+        <div>
+            <p>What did you think of this gig?</p>
+            <textarea name="comments" cols="20" rows="4" placeholder="Enter your comments..."></textarea>
+        </div>
+
+        <!-- Radio buttons -->
+        <div>
+            <p>Please select your Gender:
+                <br />
+                <input type="radio" name="gender" value="male" checked="checked" /> Male
+                <input type="radio" name="gender" value="female" />
+                Female
+            </p>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            <p>Please select your favorite music service(s):
+                <br />
+                <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+                <input type="checkbox" name="service" value="lastfm" /> Last.fm
+                <input type="checkbox" name="service" value="spotify" /> Spotify
+            </p>
+        </div>
+
+        <!-- Drop down -->
+        <div>
+            <p>What device do you listen to music on?</p>
+            <select name="devices">
+                <option value="ipod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="computer">Computer</option>
+            </select>
+        </div>
+        <div>
+            <p>Do you play any of the following instruments?
+                (You can select more than one option by holding
+                down control on a PC or command key on a Mac
+                while selecting different options.)</p>
+            <select name="instruments" size="3" multiple="multiple">
+                <option value="guitar" selected="selected">
+                    Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="keyboard" selected="selected">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select>
+        </div>
+
+        <!-- file -->
+        <div>
+            <p>Upload your song in MP3 format:</p>
+            <input type="file" name="user-song" /><br />
+            <input type="submit" value="Upload" />
+        </div>
+
+        <!-- Image -->
+        <div>
+            <p>Subscribe to our email list:</p>
+            <input type="text" name="email" />
+            <input type="image" src="../Class_4/Images/images.webp" width="100" height="100" alt="image" />
+        </div>
+
+        <!-- Button -->
+        <div>
+            <button>Add</button>
+        </div>
+
+        <!-- Labels -->
+        <div>
+            <label>Age: <input type="text" name="age" /></label>
+            <br />
+            Gender:
+            <input id="female" type="radio" name="gender" value="f">
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" value="m">
+            <label for="male">Male</label>
+        </div>
+
+        <!-- Grouping form elements -->
+        <div id="form-group">
+            <fieldset>
+                <legend>Contact details</legend>
+                <label>Email:<br />
+                    <input type="text" name="email" required /></label><br />
+                <label>Mobile:<br />
+                    <input type="text" name="mobile" required /></label><br />
+                <label>Telephone:<br />
+                    <input type="text" name="telephone" required /></label>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </div>
+
+        <!-- Date -->
+        <div>
+            <label for="username">Departure date:</label>
+            <input type="date" name="depart" />
+            <input type="submit" value="Submit" />
+        </div>
+
+        <!-- Date Time -->
+        <div>
+            <label for="date-time">Date Time:</label>
+            <input type="datetime-local" id="date-time" name="date-time">
+            <input type="range" min="0" max="5">
+            <input type="color">
+            <input type="search">
+            <input type="week">
+        </div>
+
+        <!-- iFrame -->
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206815.85051542093!2d74.20714061235525!3d35.91031684397149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e649e3642543b1%3A0x40fd0ca3ca17282b!2sGilgit!5e0!3m2!1sen!2s!4v1763132994207!5m2!1sen!2s" width="600" height="450" frameborder="2" scrolling="no" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

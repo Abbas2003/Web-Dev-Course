@@ -1,0 +1,53 @@
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.whatsapp-btn:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    right: 10px;
+    margin: auto;
+    background-color: lightgreen;
+}
+
+.chota-container {
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: -35px;
+    right: -14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.design {
+    background-color: yellowgreen;
+    height: 150px;
+    width: 80px;
+    position: absolute;
+    bottom: -5px;
+    right: -30px;
+}
+
+.testing-width {
+    border: 1px solid black;    
+    max-width: 500px;
+    min-width: 270px;
+    height: 80px;
+    overflow-y: scroll;
+}
